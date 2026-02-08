@@ -56,7 +56,8 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className="font-sans antialiased">
         {/* Hidden form for Netlify Forms detection — must be in server-rendered HTML */}
-        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+        <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" style={{display: 'none'}}>
+          <input name="form-name" type="hidden" value="contact" />
           <input name="bot-field" />
           <input name="name" />
           <input name="company" />

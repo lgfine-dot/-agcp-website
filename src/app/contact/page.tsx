@@ -101,7 +101,7 @@ export default function ContactPage() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} name="contact" data-netlify="true" netlify-honeypot="bot-field" className="space-y-6">
+                <form onSubmit={handleSubmit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field" className="space-y-6">
                   <input type="hidden" name="form-name" value="contact" />
                   <p className="hidden"><label>Don&apos;t fill this out: <input name="bot-field" /></label></p>
                   <h2 className="text-2xl font-bold text-navy mb-2">Send Us a Message</h2>
