@@ -78,14 +78,14 @@ const offerings = [
     items: [
       'Regulatory strategy development',
       'Stability data packages (ICH compliant)',
-      'GMP documentation and compliance guidance',
+      'Regulatory documentation and compliance guidance',
       'Submission support for target markets',
     ],
   },
   {
     title: 'Manufacturing Guidance',
     items: [
-      'EU GMP certified production capability',
+      'Pharmaceutical-grade production capability',
       'Process validation protocols',
       'Quality control specifications',
       'Supply chain optimization',
@@ -210,8 +210,8 @@ export default function PartnershipPage() {
               },
               {
                 title: 'Contract Manufacturing',
-                description: 'Utilize our EU GMP certified production facility for the manufacture of nano-pharmaceutical products developed using our platform technologies.',
-                features: ['GMP production', 'Quality assurance', 'Batch documentation', 'Supply reliability'],
+                description: 'Utilize our production facility for the manufacture of nano-pharmaceutical products developed using our platform technologies.',
+                features: ['Pharmaceutical-grade production', 'Quality assurance', 'Batch documentation', 'Supply reliability'],
               },
               {
                 title: 'Strategic Investment',

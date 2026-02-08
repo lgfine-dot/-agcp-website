@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Science & Validation',
   description:
-    'Scientific validation data for AGCP nanotechnology platforms: 18+ months stability, EU GMP certification, quality control processes, and regulatory expertise.',
+    'Scientific validation data for AGCP nanotechnology platforms: 18+ months stability, quality control processes, and regulatory expertise.',
   openGraph: {
     title: 'Science & Validation | AGCP Farmaceuticos',
     description: 'Rigorous scientific validation backing our pharmaceutical nanotechnology platforms.',
@@ -117,25 +117,20 @@ export default function ScienceValidationPage() {
         </div>
       </section>
 
-      {/* GMP & Quality */}
+      {/* Quality Systems */}
       <section className="py-24 lg:py-32 bg-surface">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              EU GMP Compliance &amp; Quality Systems
+              Quality Systems &amp; Manufacturing Standards
             </h2>
             <p className="mt-4 text-lg text-text-secondary">
-              Our manufacturing operations meet the stringent requirements of European Good Manufacturing Practice certification, ensuring consistent pharmaceutical-grade output.
+              Our manufacturing operations follow rigorous pharmaceutical quality standards, ensuring consistent pharmaceutical-grade output.
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                title: 'EU GMP Certification',
-                description: 'Our production facility in Portugal holds European GMP certification, the gold standard for pharmaceutical manufacturing quality assurance.',
-                points: ['Certified production facility', 'Regular compliance audits', 'Full traceability systems', 'Validated clean room operations'],
-              },
               {
                 title: 'Quality Control Processes',
                 description: 'Multi-stage quality control throughout the manufacturing process ensures every batch meets pharmaceutical specifications.',
@@ -217,7 +212,7 @@ export default function ScienceValidationPage() {
                 <h3 className="text-lg font-bold text-navy mb-6">Key Regulatory Capabilities</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    { value: 'EU', label: 'GMP Certified' },
+                    { value: 'QA', label: 'Quality Assured' },
                     { value: 'ICH', label: 'Compliant Studies' },
                     { value: 'FDA', label: 'Strategy Support' },
                     { value: 'Global', label: 'Market Access' },

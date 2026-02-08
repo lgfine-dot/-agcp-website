@@ -44,11 +44,11 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/60 mb-6">
-              Enabling pharmaceutical innovation through proprietary nanotechnology delivery platforms. EU GMP certified B2B technology licensing.
+              Enabling pharmaceutical innovation through proprietary nanotechnology delivery platforms. B2B technology licensing.
             </p>
             <div className="flex items-center gap-3">
               <div className="flex h-8 items-center rounded-full bg-white/10 px-3">
-                <span className="text-xs font-medium text-accent-light">EU GMP Certified</span>
+                <span className="text-xs font-medium text-accent-light">Portugal, EU</span>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} AGCP Farmaceuticos, LDA. All rights reserved.
           </p>
           <p className="text-xs text-white/40">
-            Caldas da Rainha, Portugal &middot; EU GMP Certified Pharmaceutical Manufacturing
+            Caldas da Rainha, Portugal &middot; Pharmaceutical Nanotechnology
           </p>
         </div>
       </div>

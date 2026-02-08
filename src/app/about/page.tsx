@@ -6,7 +6,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'AGCP Farmaceuticos: EU GMP certified pharmaceutical nanotechnology company in Portugal. Led by Lawrence Fine (CEO) and Dr. Alexander Dementev (CTO).',
+    'AGCP Farmaceuticos: pharmaceutical nanotechnology company in Portugal. Led by Lawrence Fine (CEO) and Dr. Alexander Dementev (CTO).',
   openGraph: {
     title: 'About | AGCP Farmaceuticos',
     description: 'Leadership, mission, and facilities of AGCP Farmaceuticos pharmaceutical nanotechnology.',
@@ -53,7 +53,7 @@ const milestones = [
   { year: 'Foundation', title: 'Company Established', description: 'AGCP Farmaceuticos founded in Caldas da Rainha, Portugal with focus on pharmaceutical nanotechnology.' },
   { year: 'R&D', title: 'Platform Development', description: 'Development and validation of three core nanotechnology platforms for pharmaceutical drug delivery.' },
   { year: 'Validation', title: 'Stability Demonstrated', description: '18+ months stability data validated for nanoemulsion platforms; 4+ years for CBD formulations.' },
-  { year: 'GMP', title: 'EU GMP Certification', description: 'Achieved European Good Manufacturing Practice certification for pharmaceutical production.' },
+  { year: 'Quality', title: 'Quality Standards Established', description: 'Implemented rigorous pharmaceutical quality systems for nanotechnology production.' },
   { year: 'Current', title: 'Commercial Partnerships', description: 'Actively pursuing pharmaceutical licensing partnerships and strategic investment for platform expansion.' },
 ];
 
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 We believe that breakthroughs in drug delivery should be accessible to pharmaceutical companies of all sizes. Our B2B platform model removes the barrier of developing nanotechnology in-house, allowing our partners to focus on their therapeutic expertise while we provide the delivery technology.
               </p>
               <p className="mt-4 text-lg text-text-secondary leading-relaxed">
-                Operating from our EU GMP certified facility in Portugal, we combine world-class pharmaceutical manufacturing with cutting-edge nanotechnology research to deliver commercially viable solutions for our partners.
+                Operating from our facility in Portugal, we combine pharmaceutical manufacturing with cutting-edge nanotechnology research to deliver commercially viable solutions for our partners.
               </p>
             </AnimatedSection>
 
@@ -103,7 +103,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { value: '3', label: 'Proprietary Platforms', desc: 'Validated nanotechnology' },
-                  { value: 'EU GMP', label: 'Certified', desc: 'Manufacturing standard' },
+                  { value: 'PT', label: 'Portugal, EU', desc: 'Manufacturing base' },
                   { value: 'B2B', label: 'Platform Model', desc: 'Technology licensing' },
                   { value: '47+', label: 'Years Combined', desc: 'Leadership experience' },
                 ].map((stat) => (
@@ -247,11 +247,11 @@ export default function AboutPage() {
                 Our Facilities
               </h2>
               <p className="mt-4 text-lg text-text-secondary leading-relaxed">
-                Based in Caldas da Rainha, Portugal, our EU GMP certified manufacturing facility provides the foundation for pharmaceutical-grade nanotechnology production.
+                Based in Caldas da Rainha, Portugal, our manufacturing facility provides the foundation for pharmaceutical-grade nanotechnology production.
               </p>
               <div className="mt-8 space-y-4">
                 {[
-                  'EU GMP certified pharmaceutical production',
+                  'Pharmaceutical-grade nanotechnology production',
                   'Dedicated nanotechnology formulation laboratories',
                   'Quality control and analytical testing facilities',
                   'Stability testing chambers (ICH compliant)',
@@ -289,7 +289,7 @@ export default function AboutPage() {
                 </div>
                 <div className="mt-4 flex items-center gap-3">
                   <div className="flex h-8 items-center rounded-full bg-accent/5 px-3">
-                    <span className="text-xs font-semibold text-accent">EU GMP Certified</span>
+                    <span className="text-xs font-semibold text-accent">Pharmaceutical Grade</span>
                   </div>
                   <div className="flex h-8 items-center rounded-full bg-accent/5 px-3">
                     <span className="text-xs font-semibold text-accent">Portugal, EU</span>

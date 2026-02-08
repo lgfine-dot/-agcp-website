@@ -123,7 +123,7 @@ const valueProps = [
   },
   {
     title: 'Regulatory Expertise',
-    description: 'EU GMP certified manufacturing with deep regulatory knowledge to navigate commercialization pathways across global markets.',
+    description: 'Deep regulatory knowledge to navigate commercialization pathways across global markets.',
   },
   {
     title: 'Proven Stability',

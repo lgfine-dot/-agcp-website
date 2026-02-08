@@ -98,7 +98,7 @@ export default function ApplicationsPage() {
                     { metric: 'Bioavailability', improvement: 'Significantly Enhanced', detail: 'Nano-formulation overcomes poor oral absorption' },
                     { metric: 'Dosing', improvement: 'Optimized', detail: 'Lower doses achieve therapeutic concentrations' },
                     { metric: 'Stability', improvement: 'Validated', detail: 'Pharmaceutical-grade formulation stability' },
-                    { metric: 'Manufacturing', improvement: 'EU GMP', detail: 'Scalable production under certified conditions' },
+                    { metric: 'Manufacturing', improvement: 'Scalable', detail: 'Pharmaceutical-grade production capability' },
                   ].map((item) => (
                     <div key={item.metric} className="flex gap-4 items-start">
                       <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-lg bg-accent/10">
@@ -173,7 +173,7 @@ export default function ApplicationsPage() {
                   {[
                     { phase: 'Formulation', status: 'Completed', description: 'Nano-enhanced natural compound formulations developed' },
                     { phase: 'Validation', status: 'Completed', description: 'Efficacy and stability testing validated' },
-                    { phase: 'Manufacturing', status: 'Ready', description: 'EU GMP production protocols established' },
+                    { phase: 'Manufacturing', status: 'Ready', description: 'Production protocols established' },
                     { phase: 'Licensing', status: 'Available', description: 'Ready for pharmaceutical partner licensing' },
                   ].map((item, i) => (
                     <div key={item.phase} className="relative flex gap-4 pb-8 last:pb-0">
@@ -242,8 +242,8 @@ export default function ApplicationsPage() {
               },
               {
                 title: 'Regulatory Support',
-                description: 'Leverage our regulatory expertise and EU GMP certification to accelerate your path to market across global jurisdictions.',
-                items: ['Regulatory strategy guidance', 'GMP documentation support', 'Stability data packages', 'Commercialization pathway planning'],
+                description: 'Leverage our regulatory expertise to accelerate your path to market across global jurisdictions.',
+                items: ['Regulatory strategy guidance', 'Documentation support', 'Stability data packages', 'Commercialization pathway planning'],
               },
             ].map((card, index) => (
               <AnimatedSection key={card.title} delay={index * 0.15}>

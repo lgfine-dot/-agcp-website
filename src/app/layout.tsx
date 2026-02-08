@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | AGCP Farmaceuticos - Pharmaceutical Nanotechnology',
   },
   description:
-    'AGCP Farmaceuticos provides proprietary nanotechnology drug delivery platforms for pharmaceutical licensing. EU GMP certified B2B technology partner.',
+    'AGCP Farmaceuticos provides proprietary nanotechnology drug delivery platforms for pharmaceutical licensing. B2B technology partner.',
   keywords: [
     'pharmaceutical nanotechnology platform',
     'drug delivery technology licensing',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'AGCP Farmaceuticos',
     title: 'AGCP Farmaceuticos - Pharmaceutical Nanotechnology Platform',
     description:
-      'Proprietary nanotechnology drug delivery platforms for pharmaceutical licensing. EU GMP certified.',
+      'Proprietary nanotechnology drug delivery platforms for pharmaceutical licensing.',
   },
   twitter: {
     card: 'summary_large_image',
