@@ -100,11 +100,6 @@ const platforms = [
 
 const trustSignals = [
   {
-    value: 'EU GMP',
-    label: 'Certified Manufacturing',
-    description: 'European pharmaceutical-grade production facility',
-  },
-  {
     value: '18+',
     label: 'Months Stability Data',
     description: 'Validated nanoemulsion formulation stability',
