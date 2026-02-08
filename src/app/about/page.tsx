@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata: Metadata = {
@@ -135,8 +136,8 @@ export default function AboutPage() {
             <AnimatedSection>
               <div className="h-full rounded-2xl bg-white border border-border overflow-hidden">
                 <div className="bg-navy p-8 text-center">
-                  <div className="mx-auto h-32 w-32 rounded-full bg-navy-light border-4 border-accent/20 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-white">LF</span>
+                  <div className="mx-auto h-32 w-32 rounded-full border-4 border-accent/20 overflow-hidden">
+                    <Image src="/30.jpeg" alt="Lawrence Fine" width={128} height={128} className="h-full w-full object-cover" />
                   </div>
                   <h3 className="mt-4 text-xl font-bold text-white">Lawrence Fine</h3>
                   <p className="text-accent font-medium">CEO &amp; Chairman</p>
@@ -171,8 +172,8 @@ export default function AboutPage() {
             <AnimatedSection delay={0.15}>
               <div className="h-full rounded-2xl bg-white border border-border overflow-hidden">
                 <div className="bg-navy p-8 text-center">
-                  <div className="mx-auto h-32 w-32 rounded-full bg-navy-light border-4 border-accent/20 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-white">AD</span>
+                  <div className="mx-auto h-32 w-32 rounded-full border-4 border-accent/20 overflow-hidden">
+                    <Image src="/Alex3-1-1-edited-200x300.png" alt="Dr. Alexander Dementev" width={128} height={128} className="h-full w-full object-cover" />
                   </div>
                   <h3 className="mt-4 text-xl font-bold text-white">Dr. Alexander Dementev</h3>
                   <p className="text-accent font-medium">President &amp; CTO</p>
