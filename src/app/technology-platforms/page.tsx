@@ -25,10 +25,10 @@ function BreadcrumbSchema() {
 }
 
 const grapheneSpecs = [
-  { label: 'Production Cost', value: '<$25/gram' },
+  { label: 'Cost Advantage', value: 'Significant Reduction' },
   { label: 'Market Price', value: '$500-5,000/gram' },
-  { label: 'Cost Advantage', value: '95%+ Reduction' },
   { label: 'Quality', value: 'Monolayer Grade' },
+  { label: 'Consistency', value: 'Pharmaceutical-Grade' },
 ];
 
 const transdermalSpecs = [
@@ -87,7 +87,7 @@ export default function TechnologyPlatformsPage() {
                 <ul className="space-y-3">
                   {[
                     'Proprietary monolayer graphene production methodology',
-                    'Production cost below $25/gram versus market rates of $500-5,000/gram',
+                    'Significant cost reduction versus market rates of $500-5,000/gram',
                     'Scalable manufacturing for pharmaceutical-volume production',
                     'Consistent quality meeting pharmaceutical-grade specifications',
                     'Applications spanning drug delivery, biosensors, and advanced materials',
@@ -118,7 +118,7 @@ export default function TechnologyPlatformsPage() {
                   <div>
                     <div className="flex justify-between mb-2">
                       <span className="text-sm font-medium text-text-secondary">AGCP Production</span>
-                      <span className="text-sm font-bold text-accent">&lt;$25/gram</span>
+                      <span className="text-sm font-bold text-accent">Significant Reduction</span>
                     </div>
                     <div className="h-4 rounded-full bg-border overflow-hidden">
                       <div className="h-full w-[5%] rounded-full bg-accent" />

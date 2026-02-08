@@ -16,10 +16,28 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // In production, this would submit to an API endpoint
-    setSubmitted(true);
+    setError('');
+    try {
+      const form = e.target as HTMLFormElement;
+      const body = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);
+      body.append('form-name', 'contact');
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError('Something went wrong. Please try again or email us directly.');
+      }
+    } catch {
+      setError('Something went wrong. Please try again or email us directly.');
+    }
   };
 
   return (
@@ -83,11 +101,18 @@ export default function ContactPage() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} name="contact" data-netlify="true" netlify-honeypot="bot-field" className="space-y-6">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden"><label>Don&apos;t fill this out: <input name="bot-field" /></label></p>
                   <h2 className="text-2xl font-bold text-navy mb-2">Send Us a Message</h2>
                   <p className="text-text-secondary mb-8">
                     Please provide your details and the nature of your inquiry. All fields marked with * are required.
                   </p>
+                  {error && (
+                    <div className="rounded-lg bg-red-50 border border-red-200 p-4 text-sm text-red-700">
+                      {error}
+                    </div>
+                  )}
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
@@ -97,6 +122,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         id="name"
+                        name="name"
                         required
                         value={formState.name}
                         onChange={(e) => setFormState({ ...formState, name: e.target.value })}
@@ -111,6 +137,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         id="company"
+                        name="company"
                         required
                         value={formState.company}
                         onChange={(e) => setFormState({ ...formState, company: e.target.value })}
@@ -128,6 +155,7 @@ export default function ContactPage() {
                       <input
                         type="text"
                         id="role"
+                        name="role"
                         required
                         value={formState.role}
                         onChange={(e) => setFormState({ ...formState, role: e.target.value })}
@@ -142,6 +170,7 @@ export default function ContactPage() {
                       <input
                         type="email"
                         id="email"
+                        name="email"
                         required
                         value={formState.email}
                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
@@ -159,6 +188,7 @@ export default function ContactPage() {
                       <input
                         type="tel"
                         id="phone"
+                        name="phone"
                         value={formState.phone}
                         onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
                         className="w-full rounded-lg border border-border bg-white px-4 py-3 text-navy placeholder:text-text-light focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-colors"
@@ -171,6 +201,7 @@ export default function ContactPage() {
                       </label>
                       <select
                         id="inquiryType"
+                        name="inquiryType"
                         required
                         value={formState.inquiryType}
                         onChange={(e) => setFormState({ ...formState, inquiryType: e.target.value })}
@@ -189,6 +220,7 @@ export default function ContactPage() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       required
                       rows={5}
                       value={formState.message}

@@ -46,7 +46,7 @@ const platforms = [
   {
     title: 'Scalable Graphene Production',
     description:
-      'Proprietary monolayer graphene manufacturing at <$25/gram versus the market standard of $500-5,000/gram. Enabling advanced materials and drug delivery applications at pharmaceutical scale.',
+      'Proprietary monolayer graphene manufacturing at a fraction of the market standard of $500-5,000/gram. Enabling advanced materials and drug delivery applications at pharmaceutical scale.',
     href: '/technology-platforms#graphene',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-12 w-12" aria-hidden="true">
@@ -56,8 +56,8 @@ const platforms = [
         <circle cx="24" cy="24" r="2" fill="#0066FF" />
       </svg>
     ),
-    stat: '<$25/gram',
-    statLabel: 'Production Cost',
+    stat: 'Significant',
+    statLabel: 'Cost Reduction',
   },
   {
     title: 'Transdermal Nanoparticle Delivery',
