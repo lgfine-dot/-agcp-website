@@ -34,7 +34,7 @@ const grapheneSpecs = [
 const transdermalSpecs = [
   { label: 'Delivery Method', value: 'Topical Nanoparticle' },
   { label: 'Absorption', value: 'Enhanced Penetration' },
-  { label: 'Validation', value: 'Clinical Data' },
+  { label: 'Validation', value: 'Pre-Clinical Data' },
   { label: 'Applications', value: 'Multi-Therapeutic' },
 ];
 

@@ -172,7 +172,7 @@ export default function ApplicationsPage() {
                 <div className="space-y-0">
                   {[
                     { phase: 'Formulation', status: 'Completed', description: 'Nano-enhanced natural compound formulations developed' },
-                    { phase: 'Validation', status: 'Completed', description: 'Efficacy and stability testing validated' },
+                    { phase: 'Validation', status: 'In Progress', description: 'Efficacy and stability testing in progress' },
                     { phase: 'Manufacturing', status: 'Ready', description: 'Production protocols established' },
                     { phase: 'Licensing', status: 'Available', description: 'Ready for pharmaceutical partner licensing' },
                   ].map((item, i) => (
