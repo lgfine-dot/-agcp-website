@@ -154,7 +154,7 @@ export default function AboutPage() {
                       '17-year career at Microsoft Corporation',
                       'Extensive M&A and commercialization expertise',
                       'Biotech board experience leading Phase II clinical trials',
-                      'Track record of successful biotech exits',
+                      'Track record of successful exits',
                     ].map((item) => (
                       <div key={item} className="flex items-start gap-2">
                         <svg className="mt-1 h-4 w-4 flex-shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -247,7 +247,7 @@ export default function AboutPage() {
                 Our Facilities
               </h2>
               <p className="mt-4 text-lg text-text-secondary leading-relaxed">
-                Based in Caldas da Rainha, Portugal, our manufacturing facility provides the foundation for pharmaceutical-grade nanotechnology production.
+                Based in Lisbon, Portugal at the University of Lisbon&apos;s Tec Lab, our manufacturing facility provides the foundation for pharmaceutical-grade nanotechnology production.
               </p>
               <div className="mt-8 space-y-4">
                 {[
@@ -276,14 +276,13 @@ export default function AboutPage() {
                   </svg>
                   <div>
                     <p className="font-bold text-navy">AGCP Farmaceuticos, LDA</p>
-                    <p className="text-sm text-text-secondary">Caldas da Rainha, Portugal</p>
+                    <p className="text-sm text-text-secondary">Lisbon, Portugal</p>
                   </div>
                 </div>
                 <div className="rounded-xl bg-surface border border-border p-6">
                   <p className="text-sm text-text-secondary">
-                    Estrada Nacional 360, N 94<br />
-                    Santa Catarina<br />
-                    2500-773 Caldas da Rainha<br />
+                    University of Lisbon, Tec Lab<br />
+                    Lisbon<br />
                     Portugal
                   </p>
                 </div>
