@@ -72,13 +72,13 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 text-sm">
               <p className="text-white/60">
-                <a href="tel:+351926367242" className="hover:text-white transition-colors">
-                  +351-926-367-242
+                <a href="tel:+13044156203" className="hover:text-white transition-colors">
+                  +1-304-415-6203
                 </a>
               </p>
               <p className="text-white/60">
-                <a href="mailto:alex@agcp.pt" className="hover:text-white transition-colors">
-                  alex@agcp.pt
+                <a href="mailto:lawrence@agcp.pt" className="hover:text-white transition-colors">
+                  lawrence@agcp.pt
                 </a>
               </p>
             </div>

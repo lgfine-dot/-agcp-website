@@ -113,8 +113,8 @@ export default function ProductsPage() {
             </div>
             <p className="mt-4 text-sm text-text-secondary">
               or email us directly at{' '}
-              <a href="mailto:alex@agcp.pt" className="font-semibold text-accent hover:text-accent-dark transition-colors">
-                alex@agcp.pt
+              <a href="mailto:lawrence@agcp.pt" className="font-semibold text-accent hover:text-accent-dark transition-colors">
+                lawrence@agcp.pt
               </a>
             </p>
           </AnimatedSection>

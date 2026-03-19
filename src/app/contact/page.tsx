@@ -79,14 +79,14 @@ export default function ContactPage() {
               <p>2500-773, Caldas da Rainha, Portugal</p>
               <p className="pt-2">
                 Phone:{' '}
-                <a href="tel:+351926367242" className="text-accent hover:text-accent-dark transition-colors font-medium">
-                  +351-926-367-242
+                <a href="tel:+13044156203" className="text-accent hover:text-accent-dark transition-colors font-medium">
+                  +1-304-415-6203
                 </a>
               </p>
               <p>
                 Email:{' '}
-                <a href="mailto:alex@agcp.pt" className="text-accent hover:text-accent-dark transition-colors font-medium">
-                  alex@agcp.pt
+                <a href="mailto:lawrence@agcp.pt" className="text-accent hover:text-accent-dark transition-colors font-medium">
+                  lawrence@agcp.pt
                 </a>
               </p>
               <p className="text-sm text-text-light pt-1">GPS: 39.448207, -9.009992</p>
