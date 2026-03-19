@@ -8,10 +8,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/technology-platforms', label: 'Technology' },
-  { href: '/applications', label: 'Applications' },
-  { href: '/science-validation', label: 'Science & Validation' },
-  { href: '/partnership', label: 'Partnership' },
+  { href: '/technologies', label: 'Technologies' },
+  { href: '/pharmaceutical-approach', label: 'Pharmaceutical Approach' },
+  { href: '/nutraceutical-approach', label: 'Nutraceutical Approach' },
+  { href: '/products', label: 'Products' },
+  { href: '/team', label: 'Team' },
   { href: '/contact', label: 'Contact' },
 ];
 

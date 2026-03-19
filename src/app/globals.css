@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-navy: #0A2540;
-  --color-navy-light: #0F3460;
-  --color-navy-dark: #061A2E;
-  --color-accent: #0066FF;
-  --color-accent-light: #3385FF;
-  --color-accent-dark: #0052CC;
-  --color-surface: #F8FAFC;
-  --color-surface-dark: #F1F5F9;
-  --color-border: #E2E8F0;
-  --color-text-primary: #0A2540;
-  --color-text-secondary: #475569;
-  --color-text-light: #94A3B8;
+  --color-navy: #1a3a5c;
+  --color-navy-light: #24506e;
+  --color-navy-dark: #122a44;
+  --color-accent: #2a7db5;
+  --color-accent-light: #3a8dc5;
+  --color-accent-dark: #1e5f8a;
+  --color-surface: #f8f9fa;
+  --color-surface-dark: #f0f1f2;
+  --color-border: #e0e0e0;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-text-light: #888888;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -39,6 +39,62 @@ body {
 ::selection {
   background-color: var(--color-accent);
   color: white;
+}
+
+/* Section heading style */
+.section-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section-subheading {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+}
+
+/* Hero sections */
+.hero-section {
+  min-height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section img {
+  object-fit: cover;
+}
+
+/* Alternating section backgrounds */
+.section-alt {
+  background-color: var(--color-surface);
+}
+
+/* Card base */
+.card {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Button base */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
 }
 
 /* Custom scrollbar */
