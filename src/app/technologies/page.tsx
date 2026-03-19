@@ -3,7 +3,8 @@ import AnimatedSection from '@/components/AnimatedSection';
 const sections = [
   {
     heading: 'Our Technologies Focus',
-    imageLabel: 'technologies-focus-image',
+    image: '/nanoemulsion-beakers.jpg',
+    imageAlt: 'Nanoemulsion beakers in laboratory',
     imageLeft: true,
     bgAlt: true,
     bullets: [
@@ -16,7 +17,8 @@ const sections = [
   },
   {
     heading: 'Laboratory Capabilities',
-    imageLabel: 'lab-capabilities-image',
+    image: '/hplc-lab.jpg',
+    imageAlt: 'HPLC laboratory equipment',
     imageLeft: false,
     bgAlt: false,
     bullets: [
@@ -30,7 +32,8 @@ const sections = [
   },
   {
     heading: 'Our Development Focus',
-    imageLabel: 'development-focus-image',
+    image: '/nano-capsule.jpg',
+    imageAlt: 'Nano-capsule formulation',
     imageLeft: true,
     bgAlt: true,
     bullets: [
@@ -74,13 +77,13 @@ export default function TechnologiesPage() {
               delay={0.1}
               className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
             >
-              {/* Image placeholder */}
+              {/* Image */}
               <div className={section.imageLeft ? 'lg:order-1' : 'lg:order-2'}>
-                <div className="h-64 w-full rounded-lg bg-gray-200 flex items-center justify-center">
-                  <span className="text-sm text-text-light font-medium">
-                    {section.imageLabel}
-                  </span>
-                </div>
+                <img
+                  src={section.image}
+                  alt={section.imageAlt}
+                  className="h-64 w-full rounded-lg object-cover"
+                />
               </div>
 
               {/* Text content */}

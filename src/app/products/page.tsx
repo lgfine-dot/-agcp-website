@@ -7,21 +7,24 @@ const products = [
     badge: 'Rx Pipeline',
     text: 'Proprietary SNEDDS-based drug delivery systems for BCS Class IV compounds, achieving significantly enhanced bioavailability versus conventional formulations.',
     href: '/pharmaceutical-approach',
-    imagePlaceholder: 'pharma-formulations-image',
+    image: '/pharma-approach-hero.jpg',
+    imageAlt: 'Pharmaceutical nano-formulations',
   },
   {
     title: 'Nutraceutical Delivery Systems',
     badge: 'Active R&D',
     text: 'Nanofabricated delivery platforms for bioactive compounds including vitamins, flavonoids, and proteins — enhancing efficacy of natural therapeutics.',
     href: '/nutraceutical-approach',
-    imagePlaceholder: 'nutraceutical-delivery-image',
+    image: '/nutra-compounds.jpg',
+    imageAlt: 'Nutraceutical bioactive compounds',
   },
   {
     title: 'Topical & Sublingual Formulations',
     badge: 'Development Stage',
     text: 'Specialized topical solubilizing formulations and fast-absorbing sublingual tablets for effective transmucosal drug transport.',
     href: '/technologies',
-    imagePlaceholder: 'topical-sublingual-image',
+    image: '/nanoemulsion-beakers.jpg',
+    imageAlt: 'Nanoemulsion laboratory formulations',
   },
 ];
 
@@ -57,12 +60,12 @@ export default function ProductsPage() {
             {products.map((product, index) => (
               <AnimatedSection key={product.title} delay={index * 0.12}>
                 <div className="card flex flex-col h-full overflow-hidden transition-shadow">
-                  {/* Image placeholder */}
-                  <div className="h-48 bg-gray-200 flex items-center justify-center">
-                    <span className="text-sm text-text-light font-medium">
-                      {product.imagePlaceholder}
-                    </span>
-                  </div>
+                  {/* Image */}
+                  <img
+                    src={product.image}
+                    alt={product.imageAlt}
+                    className="h-48 w-full object-cover"
+                  />
 
                   <div className="p-6 flex flex-col flex-1">
                     <span className={`self-start px-2.5 py-0.5 rounded-full text-xs font-semibold mb-3 ${BADGE_COLORS[product.badge] || 'bg-gray-100 text-gray-600'}`}>

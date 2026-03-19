@@ -46,17 +46,20 @@ const contentBlocks = [
   {
     label: 'INNOVATION',
     text: 'Pioneering pharmaceutical solutions through advanced nanotechnology and natural ingredient research, delivering measurable improvements in therapeutic efficacy.',
-    imagePlaceholder: 'innovation-image',
+    image: '/innovation.jpg',
+    imageAlt: 'Pharmaceutical innovation research',
   },
   {
     label: 'TECHNOLOGY',
     text: 'Our proprietary nanoemulsion drug delivery platform achieves sub-10nm particle sizes with proven stability exceeding four years — validated through Experiment 0001.',
-    imagePlaceholder: 'technology-image',
+    image: '/hplc-lab.jpg',
+    imageAlt: 'HPLC laboratory equipment',
   },
   {
     label: 'DELIVERY',
     text: 'Advanced drug delivery systems engineered for superior bioavailability, targeted release, and reduced toxicity — bringing natural therapeutics to clinical-grade performance.',
-    imagePlaceholder: 'delivery-image',
+    image: '/nano-capsule.jpg',
+    imageAlt: 'Nano-capsule drug delivery',
   },
 ];
 
@@ -137,13 +140,13 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                {/* Image placeholder */}
+                {/* Image */}
                 <div className={imageLeft ? 'lg:order-1' : ''}>
-                  <div className="aspect-[4/3] rounded-lg bg-surface-dark flex items-center justify-center">
-                    <span className="text-sm text-text-light font-medium">
-                      {block.imagePlaceholder}
-                    </span>
-                  </div>
+                  <img
+                    src={block.image}
+                    alt={block.imageAlt}
+                    className="aspect-[4/3] w-full rounded-lg object-cover"
+                  />
                 </div>
               </AnimatedSection>
             );
